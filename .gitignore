@@ -3,10 +3,12 @@
 package-lock.json
 dist/
 .firebase/
+src/helpers/apiKeys.json
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+src/helpers/apiKeys.json
 
 # testing
 /coverage
