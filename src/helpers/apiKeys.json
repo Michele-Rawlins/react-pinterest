@@ -1,12 +1,12 @@
 {
   "firebaseKeys": {
 
-"apiKey": "AIzaSyCVbH4mKhmSMhKxILlMScvvaglLvD4nBAM",
-"authDomain": "react-pinterest-3ac9b.firebaseapp.com",
-"databaseURL": "https://react-pinterest-3ac9b.firebaseio.com",
-"projectId": "react-pinterest-3ac9b",
-"storageBucket": "react-pinterest-3ac9b.appspot.com",
-"messagingSenderId": "995458269210",
-"appId": "1:995458269210:web:bb655cbedd6d3b151591a3"
+    "apiKey": "AIzaSyDJKcUPiyT1AnJLc7ctC5qjZs6GZqVTNJk",
+    "authDomain": "react-pinterest-a69a3.firebaseapp.com",
+    "databaseURL": "https://react-pinterest-a69a3.firebaseio.com",
+    "projectId": "react-pinterest-a69a3",
+    "storageBucket": "react-pinterest-a69a3.appspot.com",
+    "messagingSenderId": "505345337859",
+    "appId": "1:505345337859:web:d7766f2303b28fd1f6fc36"
   }
 }
