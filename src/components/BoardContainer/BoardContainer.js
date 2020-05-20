@@ -6,7 +6,7 @@ class BoardContainer extends React.Component {
   render() {
     return (
       <div className="BoardContainer">
-        <h1> INSIDE BOARD CONATINER</h1>
+        <h1> INSIDE BOARD CONTAINER</h1>
       </div>
     );
   }
