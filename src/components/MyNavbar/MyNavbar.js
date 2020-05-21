@@ -29,16 +29,16 @@ class MyNavbar extends React.Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                 {
-                    authed
-                      ? <button className="nav-link btn btn-danger" onClick={this.logMeOut}> Logout</button>
-                      : ''
-                 }
+                {
+                  authed
+                    ? <button className="nav-link btn btn-danger" onClick={this.logMeOut}>Logout</button>
+                    : ''
+                }
               </li>
             </ul>
-           </div>
-          </nav>
-         </div>
+          </div>
+        </nav>
+      </div>
     );
   }
 }
