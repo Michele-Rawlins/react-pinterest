@@ -27,7 +27,7 @@ class BoardContainer extends React.Component {
     const { boards } = this.state;
     const { setSingleBoard } = this.props;
 
-    const makeBoards = boards.map((board) => <Board key={board.id} board={board} setSingleBoard={setSingleBoard} />); 
+    const makeBoards = boards.map((board) => <Board key={board.id} board={board} setSingleBoard={setSingleBoard} />);
 
     return (
       <div className="BoardContainer">
