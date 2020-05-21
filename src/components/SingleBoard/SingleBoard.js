@@ -24,28 +24,27 @@ class SingleBoard extends React.Component {
       .then((request) => {
         const board = request.data;
         this.setState({ board });
-        pinsData.getPinsBoardId(boardId)
+        pinsData.getPinsByBoardId(boardId)
           .then((pins) => this.setState({ pins }));
       })
-      .catch((err) => console.error('unable to get singleboard', err));
+      .catch((err) => console.error('unable to get single board:', err));
   }
 
   render() {
     const { setSingleBoard } = this.props;
     const { board, pins } = this.state;
 
-    const makePins = pins.map((p) => <Pin Key = {p.id} pin={p}/>);
-
+    const makePins = pins.map((p) => <Pin key={p.id} pin={p}/>);
 
     return (
-   <div className="SingleBoard">
-     <button className="btn btn-danger" onClick={() => { setSingleBoard(''); }}>X</button>
-<h2>{board.name} Board</h2>
-<h3>{board.description}</h3>
-<div className="d-flex flex-wrap">
-  {makePins}
-</div>
-</div>
+      <div className="SingleBoard">
+        <button className="btn btn-danger" onClick={() => { setSingleBoard(''); }}>X</button>
+        <h2>{board.name} Board</h2>
+        <h3>{board.description}</h3>
+        <div className="d-flex flex-wrap">
+          {makePins}
+        </div>
+      </div>
     );
   }
 }

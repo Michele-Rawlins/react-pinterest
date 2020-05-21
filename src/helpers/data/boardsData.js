@@ -11,7 +11,7 @@ const getBoardsByUid = (uid) => new Promise((resolve, reject) => {
       if (allBoardsObject !== null) {
         Object.keys(allBoardsObject).forEach((boardId) => {
           const newBoard = allBoardsObject[boardId];
-          newBoard.is = boardId;
+          newBoard.id = boardId;
           boards.push(newBoard);
         });
       }
@@ -20,4 +20,6 @@ const getBoardsByUid = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getBoardsByUid };
+const getSingleBoard = (boardId) => axios.get(`${baseUrl}/boards/${boardId}.json`);
+
+export default { getBoardsByUid, getSingleBoard };
